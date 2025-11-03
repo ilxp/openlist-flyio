@@ -9,8 +9,11 @@
 【#4、flyctl volumes create data --size 1 --app app名字】
 * 4、fly volume create data -r nrt -n 1   #创建1g的空间
 * 5、找到alist-render目录下fly.toml文件，增加：
-[[mounts]]
-  destination = "/opt/openlist/data"
+
+  [[mounts]]
+  
+   destination = "/opt/openlist/data"
+  
   source = "data"
   
 * 6、重新部署：
